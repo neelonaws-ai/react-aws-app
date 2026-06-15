@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+  <apiVersion>61.0</apiVersion>
+  <isExposed>true</isExposed>
+  <targets>
+    <target>lightningCommunity__Page</target>
+    <target>lightningCommunity__Default_Page</target>
+    <target>lightning__AppPage</target>
+    <target>lightning__RecordPage</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightningCommunity__Page,lightningCommunity__Default_Page,lightning__AppPage,lightning__RecordPage">
+      <property name="iframeHeight" type="String"  label="Height (px)"  default="640"/>
+      <property name="iframeTitle"  type="String"  label="iframe Title" default="React Application"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>
